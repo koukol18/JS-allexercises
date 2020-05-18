@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Javascript 01 - 07 - Cvičení</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<style>
+		.sokujici-odhaleni { width: 300px; height: 300px; position: relative; }
+		.sokujici-odhaleni .kryti { position: absolute; min-height: 100%; min-width: 100%; z-index: 999; }
+		.sokujici-odhaleni .obrazek { position: absolute; min-height: 100%; min-width: 100%; max-width: 100%; }
+
+	</style>
+</head>
+
+<body>
+	<div class="container pt-3">
+		<section class="mb-3">
+			<h1 class="mb-3">Javascript 01 - 07 - CVIČENÍ</h1>
+			<p class="alert alert-primary">
+				Vítejte ve cvičení, které se vrací ke všem znalostem, které jsme zatím probrali.
+				Budu se snažit vymýšlet jen ty jednodušší, ale určitě to nebude jednoduché...
+				Některé věci naleznete i v konzoli.
+			</p>
+		</section>
+		<section class="mb-3">
+			<h2>Hledá se javascriptový programátor!</h2>
+			<p>
+				Konzole má celou řadu využití, někdy ji využívají firmy, které hledají nové programátory,
+				napište do konzole následující text:<br>
+				<em>Ahoj zvědavče, baví tě JavaScript? Napiš nám na e-mail!</em><br>
+				<em>Vaše jméno a příjmení, váš e-mail</em>
+			</p>
+		</section>
+		<section class="mb-3">
+			<h2>Zábavná matematika</h2>
+			<p>
+				Počítání nás baví, pro práci použijeme ještě jednou konzoli. Napište skript, který pracuje s proměnnými
+				r - poloměr a pi (Math.PI???). Do konzole vypište výpočet vzorečku pro obvodu a obsahu kruhu.
+			</p>
+			<p class="text-italic">
+				Bonus: Ověřte, že r je číslo!!!
+			</p>
+		</section>
+		<section class="mb-3">
+			<h2>Super Slevy!</h2>
+			<p>
+				Všichni to známe, slevy hýbou světem, co ale ti, kteří tu slevu musí vypočítat? Nešlo by to nějak
+				zjednodušit? Samozřejmě, že šlo! Máme před sebou pole čísel (ceny výrobků: 55, 20, 15, 14, 99, 8),
+				porovnejte o kolik se liší průměrná cena po slevě 20% u všech výrobků. <br>
+				Pracujete s polem, a cykly, výsledek vypište do konzole.
+			</p>
+			<p class="font-italic">
+				Příklad: Původní ceny: 10, 20; Průměr: 15; Nová cena po slevě 50%: 5, 10; Průměr: 7.5; Rozdíl: 7.5;
+			</p>
+		</section>
+		<section class="mb-3">
+			<h2>Virutální peněženka</h2>
+			<p>
+				Vytvořte si javascript objekt pro vaší vlastní virtuální pěněženku. Peněženka má dvě vlastnosti
+				- jméno vlastníka, zůstatek a 3 metody - vlozPenize - přidá do pěněženky peníze podle parametru,
+				odeberPenize - odebere peníze v hodnotě uvedené v parametru, zobrazZustatek - zobrazí do konzole
+				text s počtem peněz v peněžence.
+			</p>
+			<p class="font-italic">
+				POZOR: Nelze jít do záporných čísel, je to potřeba ošetřit.
+			</p>
+		</section>
+
+		<section class="mb-3">
+			<h2>E-vizitka</h2>
+			<p>
+				V digitální světě musíte být vždy napřed, použijte javascript, abyste upravili
+				univerzální vizitku (viz níže), na vaší vizitku. Upravte v přiložené vizitce Vaše jméno,
+				váše motto a přidejte si vlastní obrázek, nesmíte však nijak upravovat přiložené HTML.
+			</p>
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="card vizitka mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<img src="https://loremflickr.com/640/480/dog" class="card-img h-100" alt="Obrázek">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Vaše jméno</h5>
+									<p class="card-text">Sem se vejde vaše jméno s krátkým životním mottem nebo
+										myšlenkou.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mb-3">
+			<h2>Náhodný balíček karet</h2>
+			<p>
+				V souboru cards.js je pole cards, které obsahuje velké množství karet ze hry Hearthstone,
+				vytvořte si náhodný balíček s 5 kartami. Tento balíček vytvořte pomocí javascriptu,
+				a všech 5 karet umístěte do divu s třídou balicek-karet.
+			</p>
+			<p>
+				Pro vytvoření karet použijte metody createElement a appendChild, pro generování náhodných čísel
+				využijte Math.random, opakování zajistěte pomocí cyklu.
+			</p>
+			<p class="font-italic">
+				POZOR: Stačí jen obrázky karet, jejichž url adresy jsou uložené ve vlastnosti image_url u každé karty.
+			</p>
+
+			<div class="border balicek-karet" style="height: 320px;">
+				<img src="http://wow.zamimg.com/images/hearthstone/cards/enus/medium/HERO_02.png" alt="Obrázejk">
+			</div>
+		</section>
+		<section class="mb-3">
+			<h2>Šokující odhalení</h2>
+			<p>
+				Pod modrým čtvercem se skrývá tajemný obrázek, napište skript, který při kliknutí 
+				na čtverec odhalí, co se skrývá pod modrým čtvercem. Druhé kliknutí obrázek opět skryje.
+			</p>
+			<p class="font-italic">
+				Tip: Co takhle průhlednost?
+			</p>
+			<div class="sokujici-odhaleni">
+				<div class="kryti bg-primary"></div>
+				<img class="obrazek" src="https://cataas.com/cat?type=hq" alt="Překvapení">
+			</div>
+		</section>
+		<section class="mb-3">
+			<h2>Můj milý deníčku</h2>
+			<p>
+				Napište skript, který při stisknutí tlačítka přidá nakonec divu s třídou deníček
+				nový odstavec s obsahem z textového pole.
+			</p>
+			<p class="font-italic">
+				Ošetřete případy, kdy je textarea prázdná, tak aby se žádné vložení neprovedlo.
+			</p>
+			<h3>Osobní deníček</h3>
+			<div class="denicek border p-3 mb-3">
+				<h5>Záznamy v deníku:</h5>
+			</div>
+
+			<label>Napište co se vám honí hlavou...</label>
+			<textarea class="form-control mb-3 zaznam" id="zaznam" rows="3"></textarea>
+			<button class="odeslatZaznam btn btn-primary btn-lg">Přidat záznam do deníčku</button>
+		</section>
+		<p class="text-center">
+			&copy; 2020 Procvičování javascriptu.
+		</p>
+
+	</div>
+	<script src="java.js"></script>
+	<script src="cards.js"></script>
+	<script>
+		console.log("Úkol 1")
+		console.log("Ahoj zvědavče, baví tě JavaScript? Napiš nám na e-mail!")
+		console.log("Agáta Ztracená, agatka.senasla@seznam.cz")
+		console.log("-----------")
+
+
+		console.log("Úkol 2")
+		let r = 5;
+		let obsah = Math.PI * Math.pow(r,2);
+		let obvod = Math.PI * r * 2;
+		if(r = NaN) {
+			console.log ("Obvod ani obsah nelze vypočítat.")
+		}
+		else {
+			console.log("Obvod kruhu je " + obvod + " cm.")
+			console.log("Obsah kruhu je " + obsah + " cm^2.")
+		}
+		console.log("-----------")
+
+		console.log("Úkol 3")
+		let ceny = [55, 20, 15, 14, 99, 8];
+		let cislabez = 0;
+		for(let i = 0; i < ceny.length; i++) {
+			cislabez += ceny[i];
+		}
+		let prumerbez = cislabez/ceny.length;
+
+		let cislas = 0
+		for(let i = 0; i <ceny.length; i++) {
+			cislas += ceny[i] - (ceny[i]*0.2);
+		}
+		let prumers = cislas/ceny.length;
+
+		let srovnani = prumerbez - prumers;
+		console.log("Rozdíl průměrné ceny výrobků po slevě 20 % je " + srovnani + " Kč.")
+		/*Máte tam chybu pane učiteli. 20% = dvacetiprocentní, 20 % = dvacet procent ;)*/
+		console.log("-----------")
+		
+		console.log("Úkol 4")
+		const penezenka = {
+			vlastnik: "Agáta Ztracená",
+			zustatek: 5000
+		}
+		
+		penezenka.vlozPenize = function (n) {
+			this.zustatek += n 
+		}
+		penezenka.vlozPenize (2000);
+
+		penezenka.odeberPenize = function (m) {
+			if (m > this.zustatek) {
+				console.log("Nemuzes ubrat tolik penez OMG!!!")
+			}
+			else {
+				this.zustatek -= m
+			}
+		}
+		penezenka.odeberPenize (4000);
+
+		penezenka.zobrazZustatek = function () {
+			console.log("Zůstatek peněz v tvé virtuální peněžence je " + this.zustatek + " Kč.")
+		}
+		penezenka.zobrazZustatek (1)
+		console.log("-----------")
+
+		/*Úkol 5*/ 
+		 
+		var h5 = document.querySelector("h5.card-title");
+		h5.innerText = "Martin Sekyra";
+		var podnadpis = document.querySelector("p.card-text");
+		podnadpis.innerText = "Martin Sekyra - Kiss whoever the f*ck you want."
+		
+		/*Úkol 7*/
+		let kryti = document.querySelector(".kryti")
+		
+			kryti.addEventListener ("click", function() {
+			this.style.opacity = 0
+			})
+		
+		
+			kryti.addEventListener ("dblclick", function() {
+				kryti.style.opacity = 1;
+			})
+		
+	</script>
+</body>
+
+</html>
